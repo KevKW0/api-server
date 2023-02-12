@@ -1,0 +1,80 @@
+CRITICAL - 2023-02-10 06:04:33 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mahasiswa.php on line 105.
+ 1 APPPATH\Controllers\Mahasiswa.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mahasiswa.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->update('14')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 06:04:48 --> Trying to access array offset on value of type null
+in APPPATH\Controllers\Mahasiswa.php on line 105.
+ 1 APPPATH\Controllers\Mahasiswa.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'APPPATH\\Controllers\\Mahasiswa.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->update('14')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:30:06 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:27 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:41 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:41 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:42 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:47 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:48 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-10 07:33:53 --> Undefined array key "terserah"
+in APPPATH\Controllers\Mahasiswa.php on line 35.
+ 1 APPPATH\Controllers\Mahasiswa.php(35): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "terserah"', 'APPPATH\\Controllers\\Mahasiswa.php', 35)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->show('2')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')

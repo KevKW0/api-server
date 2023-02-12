@@ -1,0 +1,148 @@
+ERROR - 2023-02-08 01:32:01 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci4-server' in D:\xampp\htdocs\ci4-server\system\Database\MySQLi\Connection.php:174
+Stack trace:
+#0 D:\xampp\htdocs\ci4-server\system\Database\MySQLi\Connection.php(174): mysqli->real_connect('localhost', 'root', '', 'ci4-server', 3306, '', 0)
+#1 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#3 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#4 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#5 D:\xampp\htdocs\ci4-server\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#6 D:\xampp\htdocs\ci4-server\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#7 D:\xampp\htdocs\ci4-server\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 D:\xampp\htdocs\ci4-server\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 D:\xampp\htdocs\ci4-server\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 D:\xampp\htdocs\ci4-server\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci4-server' in D:\xampp\htdocs\ci4-server\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(573): CodeIgniter\Database\BaseConnection->initialize()
+#2 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(1408): CodeIgniter\Database\BaseConnection->query('SHOW TABLES FRO...')
+#3 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(1427): CodeIgniter\Database\BaseConnection->listTables()
+#4 D:\xampp\htdocs\ci4-server\system\Database\MigrationRunner.php(768): CodeIgniter\Database\BaseConnection->tableExists('migrations')
+#5 D:\xampp\htdocs\ci4-server\system\Database\MigrationRunner.php(168): CodeIgniter\Database\MigrationRunner->ensureTable()
+#6 D:\xampp\htdocs\ci4-server\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#7 D:\xampp\htdocs\ci4-server\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#8 D:\xampp\htdocs\ci4-server\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#9 D:\xampp\htdocs\ci4-server\spark(97): CodeIgniter\CLI\Console->run()
+#10 {main}
+ERROR - 2023-02-08 02:07:45 --> mysqli_sql_exception: Table 'ci4-server.mahasiswas' doesn't exist in D:\xampp\htdocs\ci4-server\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\xampp\htdocs\ci4-server\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\ci4-server\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\ci4-server\system\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\ci4-server\system\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\ci4-server\system\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+#6 D:\xampp\htdocs\ci4-server\app\Controllers\Mahasiswa.php(18): CodeIgniter\BaseModel->findAll()
+#7 D:\xampp\htdocs\ci4-server\system\CodeIgniter.php(934): App\Controllers\Mahasiswa->index()
+#8 D:\xampp\htdocs\ci4-server\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+#9 D:\xampp\htdocs\ci4-server\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\ci4-server\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\ci4-server\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-02-08 02:07:45 --> Table 'ci4-server.mahasiswas' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 645.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1602): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `mahasiswas`
+ORDER BY `id` ASC', [], false)
+ 2 SYSTEMPATH\Model.php(240): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(618): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Controllers\Mahasiswa.php(18): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->index()
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 02:56:50 --> There is no data to update.
+in SYSTEMPATH\BaseModel.php on line 924.
+ 1 SYSTEMPATH\BaseModel.php(924): CodeIgniter\Database\Exceptions\DataException::forEmptyDataset('update')
+ 2 SYSTEMPATH\Model.php(755): CodeIgniter\BaseModel->update([...], [])
+ 3 APPPATH\Controllers\Mahasiswa.php(119): CodeIgniter\Model->update('4', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->update('4')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 03:25:55 --> Attempt to read property "created_at" on array
+in APPPATH\Controllers\Mahasiswa.php on line 131.
+ 1 APPPATH\Controllers\Mahasiswa.php(131): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "created_at" on array', 'APPPATH\\Controllers\\Mahasiswa.php', 131)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->update('4')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 03:27:39 --> Attempt to read property "created_at" on array
+in APPPATH\Controllers\Mahasiswa.php on line 105.
+ 1 APPPATH\Controllers\Mahasiswa.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Attempt to read property "created_at" on array', 'APPPATH\\Controllers\\Mahasiswa.php', 105)
+ 2 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Mahasiswa->update('4')
+ 3 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Mahasiswa))
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 08:57:05 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 08:57:54 --> preg_match(): No ending delimiter '/' found
+in APPPATH\Filters\AuthFilter.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): No ending delimiter \'/\' found', 'APPPATH\\Filters\\AuthFilter.php', 37)
+ 2 APPPATH\Filters\AuthFilter.php(37): preg_match('/Bearer\\s(\\S+)', 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJQZW5lcmJpdCBKV1QiLCJhdWQiOiJBdWRpZW5jZSBKV1QiLCJzdWIiOiJTdWJqZWN0IEpXVCIsImlhdCI6MTY3NTg0NjU3OCwiZXhwIjoxNjc1ODUwMTc4LCJ1c2VybmFtZSI6ImtldmluIn0.6tl2FUKpCJjCYA9f2yhoLWj691nA44IPSwtnmONAK6c', null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:00:43 --> preg_match(): No ending delimiter '/' found
+in APPPATH\Filters\AuthFilter.php on line 37.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'preg_match(): No ending delimiter \'/\' found', 'APPPATH\\Filters\\AuthFilter.php', 37)
+ 2 APPPATH\Filters\AuthFilter.php(37): preg_match('/Bearer\\s(\\S+)', 'Bearer eyJpc3MiOiJQZW5lcmJpdCBKV1QiLCJhdWQiOiJBdWRpZW5jZSBKV1QiLCJzdWIiOiJTdWJqZWN0IEpXVCIsImlhdCI6MTY3NTg0NjU3OCwiZXhwIjoxNjc1ODUwMTc4LCJ1c2VybmFtZSI6ImtldmluIn0.6tl2FUKpCJjCYA9f2yhoLWj691nA44IPSwtnmONAK6c', null)
+ 3 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:03:58 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:04:13 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:06:42 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:06:52 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
+CRITICAL - 2023-02-08 09:07:13 --> Firebase\JWT\JWT::decode(): Argument #1 ($jwt) must be of type string, null given, called in D:\xampp\htdocs\ci4-server\app\Filters\AuthFilter.php on line 43
+in VENDORPATH\firebase\php-jwt\src\JWT.php on line 90.
+ 1 APPPATH\Filters\AuthFilter.php(43): Firebase\JWT\JWT::decode(null, Object(Firebase\JWT\Key))
+ 2 SYSTEMPATH\Filters\Filters.php(173): App\Filters\AuthFilter->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 3 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('users', 'before')
+ 4 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('FCPATH\\index.php')
